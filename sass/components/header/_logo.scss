@@ -4,6 +4,12 @@
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .logo {
+        margin-right: 71px;
+    }
+}
+
 @media screen and (max-width: 767.9px) {
     .logo__icon {
         fill: $secondary-text-color-theme-dark;
