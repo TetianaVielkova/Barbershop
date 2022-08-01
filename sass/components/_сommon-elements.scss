@@ -1,0 +1,107 @@
+.title {
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+}
+
+.title__theme--dark {
+    margin-bottom: 44px;
+    color: $secondary-text-color-theme-dark;
+}
+
+.title__theme--light {
+    margin-bottom: 20px;
+    color: $secondary-text-color-theme-light;
+}
+
+.suptitle {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.suptitle::before {
+    display: block;
+    width: 60px;
+    height: 1px;
+    content: '';
+    margin-right: 20px;
+}
+
+.suptitle__theme--dark {
+    color: $main-text-color-theme-dark;
+}
+
+.suptitle__theme--dark::before {
+    background-color: $main-text-color-theme-dark;
+}
+
+.suptitle__theme--light {
+    color: $main-text-color-theme-light;
+}
+
+.suptitle__theme--light::before {
+    background-color: $main-text-color-theme-light;
+}
+
+
+.modal-btn {
+    min-width: 160px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #ff6c00;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    background-color: transparent;
+    transition: color $transition-dur-and-func, background-color $transition-dur-and-func;
+}
+
+.modal-btn__theme--dark {
+    color: $secondary-text-color-theme-dark;
+}
+
+.modal-btn__theme--light {
+    color: $secondary-text-color-theme-light;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: $accent-color;
+    color: $secondary-text-color-theme-dark;
+}
+
+.section-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    max-width: 306px;
+}
+
+@media screen and (min-width: 768px) {
+    .section__description {
+        max-width: 355px;
+    }
+}
+
+.section__description--theme-dark {
+    color: $main-text-color-theme-dark;
+}
+
+.section-description--theme-light {
+    color: $main-text-color-theme-light;
+}

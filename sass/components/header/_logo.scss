@@ -1,0 +1,23 @@
+@media screen and (min-width: 768px) {
+    .logo {
+        margin-right: 75px;
+    }
+}
+
+@media screen and (max-width: 767.9px) {
+    .logo__icon {
+        fill: $secondary-text-color-theme-dark;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .logo__icon {
+        fill: $secondary-text-color-theme-light;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .logo__icon {
+        fill: $secondary-text-color-theme-light;
+    }
+}
