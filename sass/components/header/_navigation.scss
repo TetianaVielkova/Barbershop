@@ -44,6 +44,12 @@
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .navigation__item:not(:last-child) {
+        margin-right: 40px;
+    }
+}
+
 .header__phone {
     font-weight: 600;
     font-size: 18px;
@@ -97,6 +103,13 @@
         margin-bottom: 0;
         padding: 12px 37px;
         margin-left: auto;
+        color: $secondary-text-color-theme-dark;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header__btn {
+        margin-left: 0;
         color: $secondary-text-color-theme-dark;
     }
 }

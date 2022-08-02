@@ -11,6 +11,12 @@
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .header {
+        padding-left: 15px;
+    }
+}
+
 .header__menu--conteiner {
     display: flex;
     flex-direction: column;

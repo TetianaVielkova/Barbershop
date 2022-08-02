@@ -7,6 +7,7 @@
     letter-spacing: 0.05em;
 }
 
+
 .title__theme--dark {
     margin-bottom: 44px;
     color: $secondary-text-color-theme-dark;
@@ -18,6 +19,7 @@
 }
 
 .suptitle {
+    font-family: $main-font;
     display: flex;
     align-items: center;
     font-weight: 600;
@@ -45,15 +47,16 @@
 }
 
 .suptitle__theme--light {
-    color: $main-text-color-theme-light;
+    color: $secondary-text-color-theme-light;
 }
 
 .suptitle__theme--light::before {
-    background-color: $main-text-color-theme-light;
+    background-color: $secondary-text-color-theme-light;
 }
 
 
 .modal-btn {
+    font-family: $main-font;
     min-width: 160px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -94,7 +97,15 @@
 
 @media screen and (min-width: 768px) {
     .section__description {
-        max-width: 355px;
+        font-size: 16px;
+        line-height: 1.67;
+        letter-spacing: 0.02em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section__description {
+        font-size: 18px;
     }
 }
 
@@ -103,5 +114,13 @@
 }
 
 .section-description--theme-light {
+    color: $main-text-color-theme-light;
+}
+
+.section-description__theme--dark {
+    color: $main-text-color-theme-dark;
+}
+
+.section-description__theme--light {
     color: $main-text-color-theme-light;
 }
