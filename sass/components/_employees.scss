@@ -1,0 +1,115 @@
+.employees {
+    background-color: #f7f7f7;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .employees {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .employees {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .employees__list {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .employees-card {
+        flex-basis: calc((100% - 60px) / 3);
+    }
+}
+
+.employees-card__content--wrapper {
+    padding-top: 30px;
+}
+
+.employees__title {
+    margin-bottom: 44px;
+}
+
+.employees__card:not(:last-child) {
+    margin-bottom: 64px;
+}
+
+@media screen and (min-width: 1200px) {
+    .employees__card:not(:last-child) {
+        margin-bottom: 0;
+    }
+}
+
+.employees__name {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $secondary-text-color-theme-light;
+    margin-bottom: 8px;
+}
+
+.employees__position {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+    margin-bottom: 30px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $secondary-text-color-theme-dark;
+    transition: fill $transition-dur-and-func, background-color $transition-dur-and-func;
+}
+
+.social__link:hover,
+.social__link:focus {
+    background-color: $secondary-text-color-theme-light;
+}
+
+.socail__icon {
+    fill: #303030;
+}
+
+.social__link:hover .socail__icon,
+.social__link:focus .socail__icon {
+    fill: $accent-color;
+}
+
+
+@media screen and (min-width: 768px) {
+    .employees__photo {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .employees__photo {
+        margin: 0;
+    }
+}

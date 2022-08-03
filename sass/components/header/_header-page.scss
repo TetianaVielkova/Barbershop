@@ -73,6 +73,7 @@
 
     position: absolute;
     fill: $secondary-text-color-theme-dark;
+    transition: fill $transition-dur-and-func;
 
     &:hover,
     &:focus {
@@ -98,6 +99,7 @@
     border: none;
     outline: none;
     background-color: transparent;
+    transition: fill $transition-dur-and-func;
 
     &:hover,
     &:focus {
