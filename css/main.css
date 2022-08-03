@@ -1249,7 +1249,7 @@ html {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #9da4bd;
-  margin-top: 35px;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1258,21 +1258,25 @@ html {
   }
 }
 .container__footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding-top: 44px;
   padding-bottom: 44px;
 }
 
 @media screen and (min-width: 768px) {
   .container__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-top: 56px;
     padding-bottom: 56px;
   }
@@ -1288,6 +1292,9 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .media--footer::before {
