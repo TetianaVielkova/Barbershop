@@ -13,6 +13,11 @@
     background-color: inherit;
     padding: 0 15px;
     outline: transparent;
+    font-weight: 600;
+    font-size: 14px;
+    max-width: 150px;
+    color: $secondary-text-color-theme-dark;
+
 }
 
 .field__label {
@@ -33,8 +38,12 @@
     background-color: inherit;
     height: 52px;
     resize: none;
-    width: 100%;
+    min-width: 550px;
     outline: transparent;
+    font-weight: 600;
+    font-size: 14px;
+    max-width: 150px;
+    color: $secondary-text-color-theme-dark;
 }
 
 .field:focus {

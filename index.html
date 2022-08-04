@@ -640,13 +640,18 @@
                       type="text"
                       name="username"
                       autofocus
+                      required
                       autocomplete="off"
+                      minlength="2"
                   /></label>
                 </div>
                 <div class="field">
-                  <label class="field__label" for="tel"
-                    >Телефон*
-                    <input class="field__input" type="tel" name="tel" id="tel"
+                  <label class="field__label"
+                    >Телефон*<input
+                      class="field__input"
+                      type="tel"
+                      required
+                      name="tel"
                   /></label>
                 </div>
               </div>
@@ -663,7 +668,7 @@
             </form>
             <button
               class="modal-btn modal-btn__theme--dark services-modal__btn contact__btn"
-              type="button"
+              type="submit"
             >
               Отправить
             </button>
