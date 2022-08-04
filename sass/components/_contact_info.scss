@@ -1,0 +1,128 @@
+.contact__info{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../images/mobile/contact-bg.png');
+    background-color: #191C26;
+}
+
+@media screen and (min-width: 768px) {
+    .contact__box {
+        display: flex;
+        flex-basis: calc((100% - 30px) / 2);
+        gap: 30px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .address--column,
+    .contact--column {
+        width: 330px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact__box {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .address--column,
+    .contact--column {
+        width: none;
+    }
+}
+
+
+@media screen and (max-width: 767.9px) {
+    .contact__info {
+        background-image: url('../images/mobile/contact-bg.png');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .contact__info {
+            background-image: url('../images/mobile/contact-bg@2x.png');
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contact__info {
+        background-image: url('../images/tablet/contact-bg.png');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .contact__info {
+            background-image: url('../images/tablet/contact-bg@2x.png');
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact__info {
+        background-image: url('../images/desktop/contact-bg.png');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .contact__info {
+            background-image: url('../images/desktop/contact-bg@2x.png');
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact__info {
+        padding-left: 100px;
+    }
+}
+
+.contacts__icon {
+    margin-right: 16px;
+}
+
+.contact__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+}
+
+
+.contact__item {
+    color: $main-text-color-theme-dark;
+    fill: none;
+    stroke: $main-text-color-theme-dark;
+    transition: color $transition-dur-and-func, stroke $transition-dur-and-func;
+}
+
+.contact__item:hover,
+.contact__item:focus {
+    color: $accent-color;
+    stroke: $accent-color;
+}
+
+.contact__date {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: $main-text-color-theme-dark;
+}
+
+.contact__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.contact__list {
+    margin-bottom: 44px;
+}
+

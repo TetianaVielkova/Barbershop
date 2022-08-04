@@ -50,7 +50,11 @@
             </button>
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a href="#about" class="navigation__link navigation__link--current">О нас</a>
+                <a
+                  href="#about"
+                  class="navigation__link navigation__link--current"
+                  >О нас</a
+                >
               </li>
               <li class="navigation__item">
                 <a href="#services" class="navigation__link">Услуги и цены</a>
@@ -63,44 +67,52 @@
               </li>
             </ul>
           </nav>
-          <a class="header__phone" href="tel:+380441111111">+38 044 111 11 11</a>
-          <button class="header__btn modal-btn modal-btn__theme--dark" type="button">онлайн-запись
+          <a class="header__phone" href="tel:+380441111111"
+            >+38 044 111 11 11</a
+          >
+          <button
+            class="header__btn modal-btn modal-btn__theme--dark"
+            type="button"
+          >
+            онлайн-запись
           </button>
           <ul class="media__header">
-              <li class="media__item media--mobile media--before">
-                <a class="media__link " href="" lang="en">Instagram</a>
-              </li>
-              <li class="media__item media--mobile media--margin">
-                <a class="media__link" href="" lang="en">Youtube</a>
-              </li>
-            </ul>
+            <li class="media__item media--mobile media--before">
+              <a class="media__link" href="" lang="en">Instagram</a>
+            </li>
+            <li class="media__item media--mobile media--margin">
+              <a class="media__link" href="" lang="en">Youtube</a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
     <main>
       <section class="hero hero-container">
-          <div class="hero__block--left">
-            <ul class="media hero-media">
-              <li class="media__item">
-                <a class="media__link" href="" lang="en">Instagram</a>
-              </li>
-              <li class="media__item">
-                <a class="media__link" href="" lang="en">Youtube</a>
-              </li>
-            </ul>
+        <div class="hero__block--left">
+          <ul class="media hero-media">
+            <li class="media__item">
+              <a class="media__link" href="" lang="en">Instagram</a>
+            </li>
+            <li class="media__item">
+              <a class="media__link" href="" lang="en">Youtube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hero__block--right">
+          <div class="hero__text">
+            <p class="suptitle suptitle__theme--dark" lang="en">
+              A hair salon for men in Kyiv
+            </p>
+            <h1 class="hero__title title" lang="en">BarberShop</h1>
+            <p
+              class="section__description--theme-dark section-description hero__description"
+            >
+              Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно
+              и со вкусом.
+            </p>
           </div>
-          <div class="hero__block--right">
-            <div class="hero__text">
-              <p class="suptitle suptitle__theme--dark" lang="en">
-                A hair salon for men in Kyiv
-              </p>
-              <h1 class="hero__title title" lang="en">BarberShop</h1>
-              <p class="section__description--theme-dark section-description hero__description">
-                Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно
-                и со вкусом.
-              </p>
-            </div>
-          </div>
+        </div>
       </section>
       <section class="about section" id="about">
         <div class="container container__about">
@@ -167,7 +179,9 @@
             <h3 class="title title__theme--light title__about">
               Лучший Барбершоп твоего города
             </h3>
-            <p class="section__description section-description__theme--light about-section-description">
+            <p
+              class="section__description section-description__theme--light about-section-description"
+            >
               Если ты хочешь добавить в свой образ больше уверенности – тебе
               точно к нам.
             </p>
@@ -245,7 +259,9 @@
             <h2 class="title title-theme-light">
               Почему приходят именно к нам?
             </h2>
-            <p class="advantages__description--section section-description__theme--light">
+            <p
+              class="advantages__description--section section-description__theme--light"
+            >
               О нас говорят только хорошее. Но лучше 1 раз увидеть и
               прочувствовать, чем 10 раз прочитать.
             </p>
@@ -272,7 +288,6 @@
               </li>
             </ul>
           </div>
-          
         </div>
       </section>
       <section class="employees section" id="our-team">
@@ -609,73 +624,98 @@
           </ul>
         </div>
       </section>
-      <div id="contacts">
-        <section class="contact__form">
-          <h2 class="contact__title">Онлайн-запись</h2>
-          <form class="form">
-          <div class="field">
-            <label class="field__label" for="name">Имя*</label>
-            <input
-              class="field__input"
-              type="text"
-              name="username"
-              id="name"
-              autofocus
-              autocomplete="off"
-            />
+      <div class="contacts">
+        <section class="contact__form section">
+          <div class="container">
+            <h2 class="contact__title title title__theme--dark">
+              Онлайн-запись
+            </h2>
+            <form class="form">
+              <div class="field__column">
+                <div class="field">
+                  <label class="field__label"
+                    >Имя*
+                    <input
+                      class="field__input"
+                      type="text"
+                      name="username"
+                      autofocus
+                      autocomplete="off"
+                  /></label>
+                </div>
+                <div class="field">
+                  <label class="field__label" for="tel"
+                    >Телефон*
+                    <input class="field__input" type="tel" name="tel" id="tel"
+                  /></label>
+                </div>
+              </div>
+              <div class="comment__field">
+                <label class="field__label" for="comment"
+                  >Сообщение
+                  <textarea
+                    class="field__comment"
+                    name="comment"
+                    id="comment"
+                  ></textarea>
+                </label>
+              </div>
+            </form>
+            <button
+              class="modal-btn modal-btn__theme--dark services-modal__btn"
+              type="button"
+            >
+              Отправить
+            </button>
           </div>
-          <div class="field">
-            <label class="field__label" for="tel">Телефон*</label>
-            <input class="field__input" type="tel" name="tel" id="tel" />
-            <svg class="field__icon" width="13">
-              <use href="./images/svg/icons.svg#icon-tel"></use>
-            </svg>
-          </div>
-          <div class="field">
-            <label class="field__label" for="comment">Сообщение</label>
-            <textarea
-              class="field__comment"
-              name="comment"
-              id="comment"
-            ></textarea>
-          </div>
-          <button
-            class="modal-btn modal-btn__theme--dark services-modal-btn"
-            type="button"
-          >
-            Отправить
-          </button>
         </section>
-        <section class="contact__info">
-          <h2 class="contact__title">Контакты</h2>
-          <address>
-            <ul class="contact__list">
-              <li class="contact__item">
-                <a
-                  class="contact__link"
-                  href="https://goo.gl/maps/fSdhoyAyDwtJdrEC6"
-                  target="_blank"
-                >
-                  <svg class="contacts__icon" width="24" height="24">
-                    <use href="./images/sprite.svg#icon-map"></use></svg> ул. Васильковая, 7А Киев, 08132</a
-                >
-              </li>
-              <li class="contact__item">
-                <a class="contact__link" href="tel:+380441111111"
-                  ><svg class="contacts__icon" width="24" height="24">
-                    <use href="./images/sprite.svg#icon-phone"></use></svg> +38 044 111 11 11</a
-                >
-              </li>
-              <li class="contact__item">
-                <a class="contact__link" href="mailto:barbershop@email.com"
-                  ><svg class="contacts__icon" width="24" height="24">
-                    <use href="./images/sprite.svg#icon-mail"></use></svg> barbershop@email.com</a
-                >
-              </li>
-            </ul>
-          </address>
-          <h3 class="suptitle">время работы</h3>
-          <p class="contact__date">Ежедневно с 9:00 до 22:00</p>
+        <section id="contacts" class="contact__info section">
+          <div class="container">
+            <h2 class="contact__title title title__theme--dark">Контакты</h2>
+            <div class="contact__box">
+              <div class="address--column">
+                <address>
+                  <ul class="contact__list">
+                    <li class="contact__item">
+                      <a
+                        class="contact__link"
+                        href="https://goo.gl/maps/fSdhoyAyDwtJdrEC6"
+                        target="_blank"
+                      >
+                        <svg class="contacts__icon" width="24" height="24">
+                          <use href="./images/sprite.svg#icon-map"></use>
+                        </svg>
+                        ул. Васильковая, 7А Киев, 08132</a
+                      >
+                    </li>
+                    <li class="contact__item">
+                      <a class="contact__link" href="tel:+380441111111">
+                        <svg class="contacts__icon" width="24" height="24">
+                          <use href="./images/sprite.svg#icon-phone"></use>
+                        </svg>
+                        +38 044 111 11 11</a
+                      >
+                    </li>
+                    <li class="contact__item">
+                      <a
+                        class="contact__link"
+                        href="mailto:barbershop@email.com"
+                      >
+                        <svg class="contacts__icon" width="24" height="24">
+                          <use href="./images/sprite.svg#icon-mail"></use>
+                        </svg>
+                        barbershop@email.com</a
+                      >
+                    </li>
+                  </ul>
+                </address>
+              </div>
+              <div class="contact--column">
+                <h3 class="suptitle suptitle__theme--dark">время работы</h3>
+                <p class="contact__date">Ежедневно с 9:00 до 22:00</p>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </main>

@@ -1,0 +1,82 @@
+.contact__form {
+    background-color: #191C26;
+}
+
+.field,
+.comment__field {
+    margin-bottom: 44px;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+
+.field__input {
+    border: none;
+    background-color: inherit;
+    padding: 0 15px;
+    outline: transparent;
+}
+
+.field__label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: rgba(157, 164, 189, 0.4);
+}
+
+.field__comment {
+    display: block;
+    border: none;
+    background-color: inherit;
+    height: 52px;
+    resize: none;
+    width: 100%;
+    outline: transparent;
+}
+
+.field:focus {
+    border-bottom: 1px solid $secondary-text-color-theme-dark;
+}
+
+.field__label > .field__input:focus {
+    color: $secondary-text-color-theme-dark;
+}
+
+.field__label > .field__comment:focus {
+    color: $secondary-text-color-theme-dark;
+}
+
+.field__input:focus > .field__label {
+    color: $secondary-text-color-theme-dark;
+}
+
+@media screen and (min-width: 1200px) {
+    .contacts {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact__form,
+    .contact__info {
+        flex: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .field__column{
+        display: flex;
+        gap: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .field {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+}
+
+
