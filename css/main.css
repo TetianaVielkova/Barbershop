@@ -1298,11 +1298,20 @@ html {
   }
 }
 @media screen and (min-width: 1200px) {
+  .contact__container {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
   .contact__form,
 .contact__info {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__btn {
+    margin-right: auto;
+    margin-left: 0;
   }
 }
 @media screen and (min-width: 1200px) {

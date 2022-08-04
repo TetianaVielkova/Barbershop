@@ -60,11 +60,25 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .contact__form,
-    .contact__info {
-        flex: 50%;
+    .contact__container {
+        width: 100%;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .contact__form,
+    .contact__info{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact__btn {
+        margin-right: auto;
+        margin-left: 0;
+    }
+}
+
 
 @media screen and (min-width: 1200px) {
     .field__column{
